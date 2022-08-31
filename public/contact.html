@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="shop.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+    <script src="/JS/index.js" defer></script>
+    <script src="/JS/main.js" defer></script>
+    <script src="/JS/cart.js" defer></script>
+    <title>Contact</title>
+    <link rel="icon" type="image" href="/images/icons8-shopaholic-48.png" />
+  </head>
+  <body>
+    <nav>
+      <div class="navigation-bar">
+        <a href="/">
+          <div class="logo">
+            <img width="70" src="/images/Cozy.svg" alt="" />
+          </div>
+        </a>
+        <div class="icons">
+          <a class="hide" href="/">Home</a>
+          <a class="hide" href="/shop">Shop</a>
+          <a class="hide" href="/about">About</a>
+          <a class="hide" href="/contact">Contact</a>
+          <a class="menu"><i class="fa-solid fa-bars"></i></a>
+          <div class="hidden-menu">
+            <a href="/">Home</a>
+            <a href="/shop">Shop</a>
+            <a href="/about">About</a>
+            <a href="/contact">Contact</a>
+          </div>
+          <a href="/cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </a>
+          <div class="cart-count"><p id="cart-quantity">0</p></div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="contact-form">
+      <fieldset>
+        <legend>Contact Us!</legend>
+        <form
+          action="https://formsubmit.co/albertoshawn10@gmail.com"
+          id="sendingemail"
+          method="POST"
+        >
+          <div class="input-field">
+            <div class="namefield">
+              <input
+                id="name"
+                name="name"
+                type="text"
+                required
+                placeholder="First Name"
+              />
+              <input
+                id="lname"
+                name="lname"
+                type="text"
+                required
+                placeholder="Last Name"
+              />
+            </div>
+            <div class="phone-field">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                required
+                placeholder="Email Address"
+              />
+              <input
+                type="text"
+                name="pnumber"
+                id="pnumber"
+                placeholder="Phone Number"
+              />
+            </div>
+          </div>
+          <div class="msg-content">
+            <p>Your Message :</p>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="Type your message here..."
+            ></textarea>
+          </div>
+          <button class="sendmail">Send</button>
+        </form>
+      </fieldset>
+    </section>
+
+    <footer class="footer-shop">
+      <div class="mycol">
+        <div class="col col1">
+          <div class="mylogo">
+            <img width="70" src="/images/Cozy.svg" alt="" />
+          </div>
+          <h4>Contact</h4>
+          <p>
+            <strong>Address : </strong>342 Maharlika Road, Naga City Philippines
+          </p>
+          <p><strong>Phone : </strong>+639 1245 1245</p>
+          <p>Follow Us!</p>
+          <div class="socmed">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-tiktok"></i></a>
+          </div>
+        </div>
+        <div class="col col2">
+          <h4>About</h4>
+          <ul>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="#">Delivery Information</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms and Condition</a></li>
+          </ul>
+        </div>
+        <div class="col col3">
+          <h4>My Account</h4>
+          <ul>
+            <li><a href="#">My Account</a></li>
+            <li><a href="/cart">My Cart</a></li>
+            <li><a href="#">Checkout</a></li>
+            <li><a href="#">Get Voucher</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col col4">
+        <p>Cozy &copy; 2022 Ecommerce Website. All Rights Reserved.</p>
+        <img width="200" src="/images/pngegg.png" alt="" />
+      </div>
+    </footer>
+    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      let myForm = document.getElementById("sendingemail");
+      myForm.addEventListener("submit", e => {
+        e.preventDefault();
+        sendEmail();
+      });
+
+      function sendEmail() {
+        Email.send({
+          Host: "smtp.elasticemail.com",
+          Username: "albertoshawn10@gmail.com",
+          Password: "34B01EE04109298030DDECB0C10027C6E0D4",
+          To: "albertoshawn10@gmail.com",
+          From: document.getElementById("email").value,
+          Subject: "Cozy Inquiry",
+          Body: document.getElementById("message").value,
+        }).then(message => alert(message));
+      }
+    </script> -->
+  </body>
+</html>

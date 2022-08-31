@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cozy</title>
+    <link rel="icon" type="image" href="/images/icons8-shopaholic-48.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+    <script src="/JS/cart.js" defer></script>
+    <script src="/JS/index.js" defer></script>
+    <script src="/JS/main.js" defer></script>
+  </head>
+  <body>
+    <nav>
+      <div id="transparent" class="nav-index navigation-bar transparent">
+        <a href="/">
+          <div id="transdiv" class="logo">
+            <img id="translogo" width="70" src="/images/Cozy1.svg" alt="" />
+          </div>
+        </a>
+        <div id="list-index" class="icons transparent">
+          <a class="hide" href="/">Home</a>
+          <a class="hide" href="/shop">Shop</a>
+          <a class="hide" href="/about">About</a>
+          <a class="hide" href="/contact">Contact</a>
+          <a class="menu"><i class="fa-solid fa-bars"></i></a>
+          <div class="hidden-menu nontransparent">
+            <a href="/">Home</a>
+            <a href="/shop">Shop</a>
+            <a href="/about">About</a>
+            <a href="/contact">Contact</a>
+          </div>
+          <a href="/cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </a>
+          <div class="cart-count"><p id="cart-quantity">0</p></div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="main">
+      <h1>Anything but ordinary</h1>
+      <h2>Did Someone Say <span>FREE Delivery?</span></h2>
+      <a href="/shop" class="gold">Shop Now</a>
+    </section>
+
+    <section class="collection">
+      <div class="collect electronic">
+        <h1>PC <strong>Needs</strong></h1>
+        <h4>Starting from <strong>$64</strong></h4>
+      </div>
+
+      <div class="collect clothes">
+        <h1>Free <strong>Shipping</strong></h1>
+        <h4>For all items this <strong>week!</strong></h4>
+      </div>
+    </section>
+    <div class="modal"></div>
+    <!-- <header>
+      <div class="banner-container">
+        <div class="banner-image">
+          <img class="banner" src="/images/sale-banner3.jpg" alt="" />
+        </div>
+
+        <div class="banner-image">
+          <img class="banner" src="/images/sale-banner1.jpg" alt="" />
+        </div>
+        <div class="banner-image">
+          <img class="banner" src="/images/sale-banner2.jpg" alt="" />
+        </div>
+      </div>
+    </header> -->
+    <h1 class="hero-header">Featured Products</h1>
+    <p class="hero-headerp">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, omnis
+      exercitationem nesciunt doloremque.
+    </p>
+    <section class="hero">
+      <div class="duplicate" id="item-3">
+        <div class="mall-card" id="product-id-3">
+          <div id="img-container">
+            <img
+              onclick="fullScreenRender(3)"
+              width="100%"
+              src="https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg"
+              alt=""
+            />
+          </div>
+          <div class="title-price">
+            <h6 class="product-name">Mens Cotton Jacket</h6>
+            <span class="price">$55.99</span>
+          </div>
+          <div class="rating-container">
+            <div class="rating">
+              <p class="gray">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </p>
+              <div class="checked" style="width: 94%">
+                <p class="gold">
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="duplicate" id="item-12">
+        <div class="mall-card" id="product-id-12">
+          <div id="img-container">
+            <img
+              onclick="fullScreenRender(12)"
+              width="100%"
+              src="https://fakestoreapi.com/img/61mtL65D4cL._AC_SX679_.jpg"
+              alt=""
+            />
+          </div>
+          <div class="title-price">
+            <h6 class="product-name">
+              WD 4TB Gaming Drive Works with Playstation 4 Portable External
+              Hard Drive
+            </h6>
+            <span class="price">$114</span>
+          </div>
+          <div class="rating-container">
+            <div class="rating">
+              <p class="gray">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </p>
+              <div class="checked" style="width: 96%">
+                <p class="gold">
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="duplicate" id="item-5">
+        <div class="mall-card" id="product-id-5">
+          <div id="img-container">
+            <img
+              onclick="fullScreenRender(5)"
+              width="100%"
+              src="https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg"
+              alt=""
+            />
+          </div>
+          <div class="title-price">
+            <h6 class="product-name">
+              John Hardy Women's Legends Naga Gold &amp; Silver Dragon Station
+              Chain Bracelet
+            </h6>
+            <span class="price">$695</span>
+          </div>
+          <div class="rating-container">
+            <div class="rating">
+              <p class="gray">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </p>
+              <div class="checked" style="width: 92%">
+                <p class="gold">
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="toshop">
+      <a href="/shop">VIEW ALL PRODUCTS</a>
+    </div>
+
+    <div class="product-banner">
+      <h1>Expect <span>More.</span></h1>
+      <h3><span>Pay</span> Less.</h3>
+    </div>
+
+    <section class="features">
+      <div class="ftr ftr1">
+        <div class="ftr-img"></div>
+        <h4>Authentic Products</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, velit?
+        </p>
+      </div>
+      <div class="ftr ftr2">
+        <div class="ftr-img"></div>
+        <h4>Freebies & Vouchers</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, velit?
+        </p>
+      </div>
+      <div class="ftr ftr3">
+        <div class="ftr-img"></div>
+        <h4>Secure Online Payment</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, velit?
+        </p>
+      </div>
+      <div class="ftr ftr4">
+        <div class="ftr-img"></div>
+        <h4>Shipping Worldwide</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, velit?
+        </p>
+      </div>
+    </section>
+
+    <footer class="footer-index">
+      <div class="mycol">
+        <div class="col col1">
+          <div class="mylogo">
+            <img width="70" src="/images/Cozy.svg" alt="" />
+          </div>
+          <h4>Contact</h4>
+          <p>
+            <strong>Address : </strong>342 Maharlika Road, Naga City Philippines
+          </p>
+          <p><strong>Phone : </strong>+639 1245 1245</p>
+          <p>Follow Us!</p>
+          <div class="socmed">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-tiktok"></i></a>
+          </div>
+        </div>
+        <div class="col col2">
+          <h4>About</h4>
+          <ul>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="#">Delivery Information</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms and Condition</a></li>
+          </ul>
+        </div>
+        <div class="col col3">
+          <h4>My Account</h4>
+          <ul>
+            <li><a href="#">My Account</a></li>
+            <li><a href="/cart">My Cart</a></li>
+            <li><a href="#">Checkout</a></li>
+            <li><a href="#">Get Voucher</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col col4">
+        <p>Cozy &copy; 2022 Ecommerce Website. All Rights Reserved.</p>
+        <img width="200" src="/images/pngegg.png" alt="" />
+      </div>
+    </footer>
+
+    <script>
+      let myNav = document.querySelector(".nav-index");
+      let translogo = document.getElementById("translogo");
+      let listIndex = document.getElementById("list-index");
+      window.onscroll = function () {
+        if (
+          document.body.scrollTop >= 400 ||
+          document.documentElement.scrollTop >= 400
+        ) {
+          myNav.classList.remove("transparent");
+          listIndex.classList.remove("transparent");
+          translogo.src = "/images/Cozy.svg";
+        } else {
+          myNav.classList.add("transparent");
+          listIndex.classList.add("transparent");
+          translogo.src = "/images/Cozy1.svg";
+        }
+      };
+    </script>
+  </body>
+</html>
